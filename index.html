@@ -1,0 +1,710 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Sara Beauty — Brows, Lashes, Facials & Waxing in Nashville, TN</title>
+  <meta name="description" content="Sara Beauty is an owner-operated, women-owned beauty studio in South Nashville. Eyebrow threading, lamination, microblading, lash extensions, facials, dermaplaning, waxing and nails. Rated 4.8★ on Google. Mon–Sat 10AM–7PM." />
+  <meta name="theme-color" content="#1c1513" />
+  <meta property="og:title" content="Sara Beauty — Nashville Beauty Studio" />
+  <meta property="og:description" content="Threading, brows, lashes, facials, waxing & nails by Sara. 4.8★ from 101 Google reviews." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="assets/img/hero-sara.webp" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='32' fill='%231c1513'/%3E%3Ctext x='32' y='44' font-family='Georgia,serif' font-style='italic' font-size='34' text-anchor='middle' fill='%23e9cfc3'%3ES%3C/text%3E%3C/svg%3E" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,500;1,6..96,400;1,6..96,500&family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="preload" as="image" href="assets/img/hero-sara.webp" />
+  <link rel="stylesheet" href="styles.css" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BeautySalon",
+    "name": "Sara Beauty",
+    "image": "assets/img/hero-sara.webp",
+    "telephone": "+1-615-578-1851",
+    "email": "Sarabeauty615@gmail.com",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "10 Knolls Pl",
+      "addressLocality": "Nashville",
+      "addressRegion": "TN",
+      "postalCode": "37211-7410",
+      "addressCountry": "US"
+    },
+    "openingHoursSpecification": [{
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
+      "opens": "10:00",
+      "closes": "19:00"
+    }],
+    "aggregateRating": { "@type": "AggregateRating", "ratingValue": "4.8", "reviewCount": "101" },
+    "paymentAccepted": "Credit Card, Debit Card, Apple Pay, NFC Mobile Payments",
+    "sameAs": [
+      "https://www.instagram.com/sara_beautynashville/",
+      "https://www.facebook.com/p/Sara-beauty-100082855898846/",
+      "https://www.yelp.com/biz/sara-beauty-nashville",
+      "https://www.mapquest.com/us/tennessee/sara-beauty-654514755",
+      "https://www.lashly.app/booking/sara-beauty"
+    ]
+  }
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- Announcement bar -->
+  <div class="topbar">
+    <div class="topbar__inner">
+      <span class="status" id="openStatus"><span class="status__dot"></span><span class="status__text">Mon–Sat · 10AM–7PM</span></span>
+      <span class="topbar__mid">Owner-operated · Women-owned · LGBTQ+ friendly</span>
+      <a href="tel:+16155781851" class="topbar__phone">Call or text (615) 578-1851</a>
+    </div>
+  </div>
+
+  <!-- Navigation -->
+  <header class="nav" id="nav">
+    <div class="nav__inner">
+      <a href="#top" class="logo" aria-label="Sara Beauty home">
+        <span class="logo__script">Sara</span>
+        <span class="logo__caps">Beauty</span>
+      </a>
+      <nav class="nav__links" aria-label="Primary">
+        <a href="#services">Services</a>
+        <a href="#menu">Price Menu</a>
+        <a href="#lashes">Lash Studio</a>
+        <a href="#about">About Sara</a>
+        <a href="#reviews">Reviews</a>
+        <a href="#visit">Visit</a>
+      </nav>
+      <div class="nav__actions">
+        <button class="bag-btn" id="bagBtn" aria-label="Open my visit list">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 8h12l-1 12H7L6 8Z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg>
+          <span class="bag-btn__count" id="bagCount">0</span>
+        </button>
+        <a href="https://www.lashly.app/booking/sara-beauty" target="_blank" rel="noopener" class="btn btn--dark btn--sm nav__cta">Book Now</a>
+        <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu">
+          <span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile menu -->
+  <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+    <nav aria-label="Mobile">
+      <a href="#services"><span>01</span>Services</a>
+      <a href="#menu"><span>02</span>Price Menu</a>
+      <a href="#lashes"><span>03</span>Lash Studio</a>
+      <a href="#about"><span>04</span>About Sara</a>
+      <a href="#reviews"><span>05</span>Reviews</a>
+      <a href="#visit"><span>06</span>Visit</a>
+    </nav>
+    <div class="mobile-menu__foot">
+      <a href="https://www.lashly.app/booking/sara-beauty" target="_blank" rel="noopener" class="btn btn--light">Book on Lashly</a>
+      <a href="tel:+16155781851" class="btn btn--ghost-light">(615) 578-1851</a>
+    </div>
+  </div>
+
+  <main id="main">
+    <!-- HERO -->
+    <section class="hero" id="top">
+      <div class="hero__inner">
+        <div class="hero__copy">
+          <p class="eyebrow reveal">South Nashville Beauty Studio</p>
+          <h1 class="hero__title">
+            <span class="line"><span class="reveal-up">Beauty,</span></span>
+            <span class="line"><em class="reveal-up d1">softly</em></span>
+            <span class="line"><span class="reveal-up d2">perfected.</span></span>
+          </h1>
+          <p class="hero__lead reveal d3">
+            Brows, lashes, skin and nails by Sara, the studio's owner and lead aesthetician.
+            Her technique is so gentle that clients call it <em>“smooth as butter.”</em>
+          </p>
+          <div class="hero__ctas reveal d4">
+            <a href="https://www.lashly.app/booking/sara-beauty" target="_blank" rel="noopener" class="btn btn--dark">
+              Book an Appointment
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </a>
+            <a href="#menu" class="btn btn--line">Explore the Menu</a>
+          </div>
+          <div class="hero__proof reveal d5">
+            <div class="proof">
+              <strong>4.8</strong>
+              <div>
+                <span class="stars" aria-label="4.8 out of 5 stars">★★★★★</span>
+                <small>101 Google reviews</small>
+              </div>
+            </div>
+            <span class="proof__sep"></span>
+            <div class="proof">
+              <strong>5.0</strong>
+              <div>
+                <span class="stars" aria-label="5 out of 5 stars">★★★★★</span>
+                <small>Yahoo Local</small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero__visual reveal-scale">
+          <div class="arch">
+            <img src="assets/img/hero-sara.webp" alt="Sara, owner and lead aesthetician, beside the illuminated Sara Beauty sign in her Nashville studio" width="842" height="1179" fetchpriority="high" />
+            <span class="arch__name"><b>Sara</b>Owner &amp; lead aesthetician</span>
+          </div>
+          <svg class="spin-badge" viewBox="0 0 200 200" aria-hidden="true">
+            <defs><path id="circlePath" d="M100,100 m-78,0 a78,78 0 1,1 156,0 a78,78 0 1,1 -156,0"/></defs>
+            <text><textPath href="#circlePath">Book your glow ✦ Sara Beauty ✦ Nashville TN ✦ </textPath></text>
+            <text x="100" y="114" text-anchor="middle" class="spin-badge__s">S</text>
+          </svg>
+          <div class="float-card">
+            <span class="float-card__k">Mon – Sat</span>
+            <span class="float-card__v">10AM – 7PM</span>
+            <span class="float-card__k">Sunday closed</span>
+          </div>
+        </div>
+      </div>
+      <a href="#services" class="scroll-cue" aria-label="Scroll to services"><span></span></a>
+    </section>
+
+    <!-- MARQUEE -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee__track">
+        <span>Threading</span><i>✦</i><span>Brow Lamination</span><i>✦</i><span>Microblading</span><i>✦</i><span>Lash Extensions</span><i>✦</i><span>Lash Lift</span><i>✦</i><span>Aqua Facial</span><i>✦</i><span>Dermaplaning</span><i>✦</i><span>Body Waxing</span><i>✦</i><span>Lip Blushing</span><i>✦</i><span>Gel &amp; Acrylic Nails</span><i>✦</i>
+        <span>Threading</span><i>✦</i><span>Brow Lamination</span><i>✦</i><span>Microblading</span><i>✦</i><span>Lash Extensions</span><i>✦</i><span>Lash Lift</span><i>✦</i><span>Aqua Facial</span><i>✦</i><span>Dermaplaning</span><i>✦</i><span>Body Waxing</span><i>✦</i><span>Lip Blushing</span><i>✦</i><span>Gel &amp; Acrylic Nails</span><i>✦</i>
+      </div>
+    </div>
+
+    <!-- SIGNATURE SERVICES -->
+    <section class="section services" id="services">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow reveal">The Signature Edit</p>
+          <h2 class="h2 reveal d1">Everything you need, <em>one chair.</em></h2>
+          <p class="section-head__lead reveal d2">
+            One studio for 60+ treatments, from a 10-minute threading touch-up to a full permanent-makeup appointment.
+            Every service is performed personally by Sara.
+          </p>
+        </div>
+
+        <div class="svc-grid">
+          <article class="svc-card reveal" data-cat="brows">
+            <div class="svc-card__img"><img src="assets/img/service-brows.webp" alt="Freshly laminated, brushed-up eyebrow" loading="lazy" width="1024" height="1280" /></div>
+            <div class="svc-card__body">
+              <span class="svc-card__num">01</span>
+              <h3>Brows &amp; Threading</h3>
+              <p>Threading, waxing, tinting and lamination, shaped to suit your face.</p>
+              <div class="svc-card__foot"><span class="from" data-from="brows,threading"></span><button class="link-arrow" data-goto="brows">View prices</button></div>
+            </div>
+          </article>
+          <article class="svc-card reveal d1" data-cat="lashes">
+            <div class="svc-card__img"><img src="assets/img/service-lashes.webp" alt="Closed eye with fluffy volume lash extensions" loading="lazy" width="1024" height="1280" /></div>
+            <div class="svc-card__body">
+              <span class="svc-card__num">02</span>
+              <h3>Lashes</h3>
+              <p>Classic, hybrid, volume and mega volume extensions, plus lash lifts and tints.</p>
+              <div class="svc-card__foot"><span class="from" data-from="lashes"></span><button class="link-arrow" data-goto="lashes">View prices</button></div>
+            </div>
+          </article>
+          <article class="svc-card reveal d2" data-cat="skin">
+            <div class="svc-card__img"><img src="assets/img/service-facial.webp" alt="Client relaxing during a hydrating facial treatment" loading="lazy" width="1024" height="1280" /></div>
+            <div class="svc-card__body">
+              <span class="svc-card__num">03</span>
+              <h3>Facials &amp; Skin</h3>
+              <p>Deep-cleansing, Aqua and H2O facials, dermaplaning and scalp therapy.</p>
+              <div class="svc-card__foot"><span class="from" data-from="skin"></span><button class="link-arrow" data-goto="skin">View prices</button></div>
+            </div>
+          </article>
+          <article class="svc-card reveal" data-cat="pmu">
+            <div class="svc-card__img"><img src="assets/img/service-pmu.webp" alt="Soft rosy lips after lip blushing" loading="lazy" width="1024" height="1280" /></div>
+            <div class="svc-card__body">
+              <span class="svc-card__num">04</span>
+              <h3>Permanent Makeup</h3>
+              <p>Microblading, lip blushing and eyeliner tattoo, so you wake up ready.</p>
+              <div class="svc-card__foot"><span class="from" data-from="pmu"></span><button class="link-arrow" data-goto="pmu">View prices</button></div>
+            </div>
+          </article>
+          <article class="svc-card reveal d1" data-cat="wax">
+            <div class="svc-card__img"><img src="assets/img/service-wax.webp" alt="Smooth leg resting on ivory silk" loading="lazy" width="1024" height="1280" /></div>
+            <div class="svc-card__body">
+              <span class="svc-card__num">05</span>
+              <h3>Waxing</h3>
+              <p>Gentle, virtually pain-free waxing, from brows and lips to full body.</p>
+              <div class="svc-card__foot"><span class="from" data-from="wax"></span><button class="link-arrow" data-goto="wax">View prices</button></div>
+            </div>
+          </article>
+          <article class="svc-card reveal d2" data-cat="nails">
+            <div class="svc-card__img"><img src="assets/img/service-nails.webp" alt="Almond nails in nude-rose gel with a gold chrome accent" loading="lazy" width="1024" height="1280" /></div>
+            <div class="svc-card__body">
+              <span class="svc-card__num">06</span>
+              <h3>Nails</h3>
+              <p>Manicures, gel polish, dip and acrylic sets in every length.</p>
+              <div class="svc-card__foot"><span class="from" data-from="nails"></span><button class="link-arrow" data-goto="nails">View prices</button></div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRICE MENU -->
+    <section class="section menu" id="menu">
+      <div class="container">
+        <div class="menu__head">
+          <div>
+            <p class="eyebrow reveal">The Menu</p>
+            <h2 class="h2 reveal d1">Services <em>&amp;</em> prices</h2>
+          </div>
+          <div class="menu__tools reveal d2">
+            <label class="search">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+              <input type="search" id="menuSearch" placeholder="Search services… e.g. brow, wax, gel" autocomplete="off" aria-label="Search services" />
+            </label>
+          </div>
+        </div>
+
+        <div class="menu__layout">
+          <aside class="menu__cats" aria-label="Service categories">
+            <div class="cats" id="cats" role="tablist"></div>
+          </aside>
+          <div class="menu__list">
+            <div class="menu__meta">
+              <h3 id="menuTitle">All Services</h3>
+              <span id="menuCount"></span>
+            </div>
+            <ul class="items" id="menuItems"></ul>
+            <p class="menu__empty" id="menuEmpty" hidden>No services match your search. Text Sara at <a href="sms:+16155781851">(615) 578-1851</a> and she'll help you find the right treatment.</p>
+            <p class="menu__note">
+              Tap <b>+</b> to add services to your visit list, then send it to Sara as a booking request.
+              Prices match the studio's in-store service list. “Ask” means the price depends on the treatment, so contact Sara for a quote.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- LASH STUDIO -->
+    <section class="section lash" id="lashes">
+      <div class="container">
+        <div class="lash__head">
+          <div>
+            <p class="eyebrow eyebrow--light reveal">The Lash Studio</p>
+            <h2 class="h2 h2--light reveal d1">Find your <em>lash look.</em></h2>
+          </div>
+          <p class="lash__lead reveal d2">
+            From natural definition to full glamour. Each set is mapped to your eye shape and applied lash by lash.
+            Book extensions online through Lashly.
+          </p>
+        </div>
+
+        <div class="lash-grid">
+          <article class="lash-card reveal">
+            <svg class="fan" data-fan="1" viewBox="0 0 120 70" aria-hidden="true"></svg>
+            <span class="lash-card__lvl">Natural</span>
+            <h3>Classic</h3>
+            <p>One extension per natural lash. Clean and defined, like wearing mascara.</p>
+            <div class="meter" style="--v:1"><i></i><i></i><i></i><i></i></div>
+          </article>
+          <article class="lash-card reveal d1">
+            <svg class="fan" data-fan="2" viewBox="0 0 120 70" aria-hidden="true"></svg>
+            <span class="lash-card__lvl">Textured</span>
+            <h3>Hybrid</h3>
+            <p>A mix of classic and volume lashes for soft, wispy texture.</p>
+            <div class="meter" style="--v:2"><i></i><i></i><i></i><i></i></div>
+          </article>
+          <article class="lash-card reveal d2">
+            <svg class="fan" data-fan="4" viewBox="0 0 120 70" aria-hidden="true"></svg>
+            <span class="lash-card__lvl">Full</span>
+            <h3>Volume</h3>
+            <p>Handmade lightweight fans for a fluffy, dimensional and darker lash line.</p>
+            <div class="meter" style="--v:3"><i></i><i></i><i></i><i></i></div>
+          </article>
+          <article class="lash-card reveal d3">
+            <svg class="fan" data-fan="7" viewBox="0 0 120 70" aria-hidden="true"></svg>
+            <span class="lash-card__lvl">Dramatic</span>
+            <h3>Mega Volume</h3>
+            <p>Ultra-fine, densely packed fans for maximum glamour.</p>
+            <div class="meter" style="--v:4"><i></i><i></i><i></i><i></i></div>
+          </article>
+        </div>
+
+        <div class="lash__extras reveal">
+          <div class="extra"><span>Lash Lift</span><b>$82.79</b><small>30 min</small></div>
+          <div class="extra"><span>Lash Tint</span><b>$31.05</b><small>10 min</small></div>
+          <div class="extra"><span>Lashes</span><b>$41.40</b><small>15 min</small></div>
+          <div class="extra"><span>Brows &amp; Lashes</span><b>$51.75</b><small>25 min</small></div>
+          <a href="https://www.lashly.app/booking/sara-beauty" target="_blank" rel="noopener" class="btn btn--light">
+            Book Extensions on Lashly
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section about" id="about">
+      <div class="container about__grid">
+        <div class="about__media reveal-scale">
+          <img src="assets/img/about-studio.webp" alt="Sara Beauty's main studio floor with Sara's framed certifications, the butterfly logo and a pink velvet sofa" loading="lazy" width="1090" height="1253" />
+          <div class="about__tag">
+            <span>Women-owned</span>
+            <span>Owner-operated</span>
+          </div>
+        </div>
+        <div class="about__copy">
+          <p class="eyebrow reveal">Meet Sara</p>
+          <h2 class="h2 reveal d1">Every visit is <em>personal.</em></h2>
+          <p class="reveal d2">
+            Sara Beauty is a small, women-owned studio in South Nashville, near Antioch. Sara owns the studio and is its lead aesthetician,
+            so every brow, lash set and facial is done by her.
+          </p>
+          <p class="reveal d3">
+            Regulars, first-time guests and Groupon newcomers all mention the same things: a spotless room, a warm welcome
+            and a technique so gentle that waxing and threading are close to pain-free.
+          </p>
+
+          <ul class="values">
+            <li class="reveal"><span class="values__n">i.</span><div><b>Gentle by design</b><small>Light-handed threading &amp; waxing</small></div></li>
+            <li class="reveal d1"><span class="values__n">ii.</span><div><b>Spotless studio</b><small>Clean tools and a calm space</small></div></li>
+            <li class="reveal d2"><span class="values__n">iii.</span><div><b>Everyone welcome</b><small>Proudly LGBTQ+ friendly</small></div></li>
+            <li class="reveal d3"><span class="values__n">iv.</span><div><b>Flexible scheduling</b><small>Fits you in, even at busy times</small></div></li>
+          </ul>
+
+          <div class="about__sig reveal">
+            <span class="sig">Sara</span>
+            <small>Owner &amp; Lead Aesthetician</small>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- STUDIO GALLERY -->
+    <section class="section studio" id="studio">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow reveal">Inside the Studio</p>
+          <h2 class="h2 reveal d1">A little room <em>to unwind.</em></h2>
+          <p class="section-head__lead reveal d2">
+            Soft light, pink velvet and a quiet corner just for you. This is the real studio at 10 Knolls Pl, as you'll find it when you arrive.
+          </p>
+        </div>
+        <div class="studio__grid">
+          <figure class="shot shot--entry reveal-scale">
+            <img src="assets/img/gallery-entry.webp" alt="The illuminated Sara Beauty sign with butterfly logo at the studio entrance" loading="lazy" width="1400" height="1050" />
+            <figcaption><span>01</span>The entrance</figcaption>
+          </figure>
+          <figure class="shot shot--neon reveal-scale d1">
+            <img src="assets/img/gallery-neon.webp" alt="Treatment room glowing under a pink neon sign" loading="lazy" width="803" height="959" />
+            <figcaption><span>02</span>The glow room</figcaption>
+          </figure>
+          <figure class="shot shot--desk reveal-scale d2">
+            <img src="assets/img/gallery-desk.webp" alt="Front desk with the Sara Beauty logo and a lit product boutique case" loading="lazy" width="1400" height="1050" />
+            <figcaption><span>03</span>Front desk &amp; boutique</figcaption>
+          </figure>
+          <a class="shot shot--tile reveal-scale d3" href="https://www.instagram.com/sara_beautynashville/" target="_blank" rel="noopener">
+            <span class="shot__k">@sara_beautynashville</span>
+            <span class="shot__t">See the latest <em>work</em> on Instagram</span>
+            <span class="shot__arrow" aria-hidden="true">&rarr;</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- REVIEWS -->
+    <section class="section reviews" id="reviews">
+      <div class="container">
+        <div class="reviews__top">
+          <div class="score reveal">
+            <span class="score__num" data-count="4.8">4.8</span>
+            <div class="score__meta">
+              <span class="stars stars--lg">★★★★★</span>
+              <span>Average from <b>101 Google reviews</b></span>
+              <span class="score__alt"><b>5.0 ★</b> on Yahoo Local</span>
+            </div>
+          </div>
+          <div class="reviews__intro">
+            <p class="eyebrow reveal">Client Love</p>
+            <h2 class="h2 reveal d1">What clients <em>keep saying.</em></h2>
+          </div>
+        </div>
+
+        <div class="quote-grid">
+          <figure class="quote quote--feature reveal">
+            <blockquote>“Smooth as butter.”</blockquote>
+            <figcaption>How clients describe Sara's threading and waxing: gentle and almost pain-free.</figcaption>
+          </figure>
+          <figure class="quote reveal d1">
+            <span class="quote__icon">✦</span>
+            <blockquote>Clean &amp; welcoming</blockquote>
+            <figcaption>Reviewers often mention the spotless studio and warm atmosphere.</figcaption>
+          </figure>
+          <figure class="quote reveal d2">
+            <span class="quote__icon">✦</span>
+            <blockquote>Always fits you in</blockquote>
+            <figcaption>Flexible scheduling, even during the busiest times.</figcaption>
+          </figure>
+          <figure class="quote reveal d1">
+            <span class="quote__icon">✦</span>
+            <blockquote>A safe space for all</blockquote>
+            <figcaption>An LGBTQ+ friendly studio where everyone is welcome.</figcaption>
+          </figure>
+          <figure class="quote reveal d2">
+            <span class="quote__icon">✦</span>
+            <blockquote>First-timers become regulars</blockquote>
+            <figcaption>Longtime clients and Groupon first-timers both keep coming back.</figcaption>
+          </figure>
+        </div>
+
+        <div class="radio reveal">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="2"/><path d="M16.2 7.8a6 6 0 0 1 0 8.4M7.8 16.2a6 6 0 0 1 0-8.4M19 5a10 10 0 0 1 0 14M5 19A10 10 0 0 1 5 5"/></svg>
+          <p>Recommended by <b>DJ May</b> of <b>La Radio de los Latinos</b></p>
+          <span>Bilingual service · details on <a href="https://www.instagram.com/sara_beautynashville/" target="_blank" rel="noopener">Instagram</a></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- AMENITIES -->
+    <section class="section amenities">
+      <div class="container">
+        <div class="section-head section-head--center">
+          <p class="eyebrow reveal">Comfort &amp; Access</p>
+          <h2 class="h2 reveal d1">Designed for <em>your comfort.</em></h2>
+        </div>
+        <div class="amen-grid">
+          <div class="amen reveal">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2 9a15 15 0 0 1 20 0M5 12.5a10 10 0 0 1 14 0M8.5 16a5 5 0 0 1 7 0"/><circle cx="12" cy="19.5" r="1"/></svg>
+            <b>Free Wi-Fi</b><small>Stay connected</small>
+          </div>
+          <div class="amen reveal d1">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10" cy="4.5" r="1.8"/><path d="M10 7v6h6l2.5 5.5"/><path d="M14.5 17.5A5 5 0 1 1 8 10.4"/></svg>
+            <b>Accessible Entrance</b><small>Wheelchair-friendly</small>
+          </div>
+          <div class="amen reveal d2">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="4"/><path d="M9.5 17V7h3.5a3 3 0 0 1 0 6H9.5"/></svg>
+            <b>Accessible Parking</b><small>Lot on site</small>
+          </div>
+          <div class="amen reveal d3">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 10h14v2a7 7 0 0 1-14 0v-2Z"/><path d="M7 10V5a2 2 0 0 1 2-2h1M9 19l-1 2h8l-1-2"/></svg>
+            <b>Accessible Restroom</b><small>Onsite restroom</small>
+          </div>
+          <div class="amen reveal">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="5" width="20" height="14" rx="3"/><path d="M2 10h20M6 15h4"/></svg>
+            <b>Credit &amp; Debit</b><small>All major cards</small>
+          </div>
+          <div class="amen reveal d1">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="6" y="2" width="12" height="20" rx="3"/><path d="M11 18h2"/><path d="M10 8.5a3 3 0 0 1 0 4M12.5 7a5 5 0 0 1 0 7"/></svg>
+            <b>Apple Pay &amp; NFC</b><small>Tap to pay</small>
+          </div>
+          <div class="amen reveal d2">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h9M8.5 3v2M6 5c0 4 3 7 6 8M11 5c-.5 3-3 6-7 8"/><path d="m13 21 4-9 4 9M14.5 18h5"/></svg>
+            <b>Bilingual Service</b><small>Ask when booking</small>
+          </div>
+          <div class="amen reveal d3">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-7-4.4-9.3-9A5.2 5.2 0 0 1 12 6.5 5.2 5.2 0 0 1 21.3 12C19 16.6 12 21 12 21Z"/></svg>
+            <b>LGBTQ+ Friendly</b><small>All are welcome</small>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- VISIT -->
+    <section class="section visit" id="visit">
+      <div class="container visit__grid">
+        <div class="visit__info">
+          <p class="eyebrow reveal">Visit the Studio</p>
+          <h2 class="h2 reveal d1">10 Knolls Place, <em>Nashville.</em></h2>
+          <p class="visit__addr reveal d2">10 Knolls Pl, Nashville, TN 37211-7410<br />South Nashville, near Antioch</p>
+
+          <table class="hours reveal d2" id="hours">
+            <caption class="sr-only">Opening hours</caption>
+            <tbody>
+              <tr data-day="1"><th scope="row">Monday</th><td>10:00 AM – 7:00 PM</td></tr>
+              <tr data-day="2"><th scope="row">Tuesday</th><td>10:00 AM – 7:00 PM</td></tr>
+              <tr data-day="3"><th scope="row">Wednesday</th><td>10:00 AM – 7:00 PM</td></tr>
+              <tr data-day="4"><th scope="row">Thursday</th><td>10:00 AM – 7:00 PM</td></tr>
+              <tr data-day="5"><th scope="row">Friday</th><td>10:00 AM – 7:00 PM</td></tr>
+              <tr data-day="6"><th scope="row">Saturday</th><td>10:00 AM – 7:00 PM</td></tr>
+              <tr data-day="0" class="is-closed"><th scope="row">Sunday</th><td>Closed</td></tr>
+            </tbody>
+          </table>
+
+          <div class="visit__btns reveal d3">
+            <a class="btn btn--dark" href="https://www.google.com/maps/dir/?api=1&amp;destination=10+Knolls+Pl,+Nashville,+TN+37211" target="_blank" rel="noopener">
+              Get Directions
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg>
+            </a>
+            <a class="btn btn--line" href="tel:+16155781851">Call the Studio</a>
+          </div>
+        </div>
+        <div class="visit__map reveal-scale">
+          <iframe
+            title="Map showing Sara Beauty at 10 Knolls Pl, Nashville, TN"
+            src="https://maps.google.com/maps?q=10%20Knolls%20Pl%2C%20Nashville%2C%20TN%2037211&amp;z=15&amp;output=embed"
+            loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+        </div>
+      </div>
+      <div class="container visit__photos">
+        <figure class="shot reveal-scale">
+          <img src="assets/img/visit-storefront.webp" alt="Sara Beauty storefront at 10 Knolls Pl with the sign above the door" loading="lazy" width="1200" height="900" />
+          <figcaption><span>Arriving</span>Look for the Sara Beauty sign</figcaption>
+        </figure>
+        <figure class="shot reveal-scale d1">
+          <img src="assets/img/visit-parking.webp" alt="Accessible parking space right outside the studio entrance" loading="lazy" width="1200" height="900" />
+          <figcaption><span>Parking</span>Accessible spot by the entrance</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- BOOK -->
+    <section class="section book" id="book">
+      <div class="container book__grid">
+        <div class="book__copy">
+          <p class="eyebrow eyebrow--light reveal">Appointments</p>
+          <h2 class="h2 h2--light reveal d1">Your glow, <em>your way.</em></h2>
+          <p class="reveal d2">Book online, call, text or email. Sara replies personally to every message.</p>
+
+          <div class="channels">
+            <a class="channel reveal" href="https://www.lashly.app/booking/sara-beauty" target="_blank" rel="noopener">
+              <span class="channel__k">Online</span>
+              <span class="channel__v">Book on Lashly</span>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg>
+            </a>
+            <a class="channel reveal d1" href="tel:+16155781851">
+              <span class="channel__k">Call</span>
+              <span class="channel__v">+1 (615) 578-1851</span>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg>
+            </a>
+            <a class="channel reveal d2" href="sms:+16155781851">
+              <span class="channel__k">Text</span>
+              <span class="channel__v">Message Sara</span>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg>
+            </a>
+            <a class="channel reveal d3" href="mailto:Sarabeauty615@gmail.com">
+              <span class="channel__k">Email</span>
+              <span class="channel__v">Sarabeauty615@gmail.com</span>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <form class="req reveal-scale" id="reqForm" novalidate>
+          <h3>Request an appointment</h3>
+          <p class="req__sub">Fill this in, then send it to Sara by text or email.</p>
+          <div class="field-row">
+            <label class="field">
+              <span>Your name</span>
+              <input type="text" name="name" required autocomplete="name" placeholder="Full name" />
+            </label>
+            <label class="field">
+              <span>Phone</span>
+              <input type="tel" name="phone" autocomplete="tel" placeholder="(615) 000-0000" />
+            </label>
+          </div>
+          <div class="field-row">
+            <label class="field">
+              <span>Preferred day</span>
+              <input type="date" name="date" id="reqDate" />
+            </label>
+            <label class="field">
+              <span>Preferred time</span>
+              <select name="time">
+                <option value="">Any time</option>
+                <option>Morning (10AM–12PM)</option>
+                <option>Midday (12PM–3PM)</option>
+                <option>Afternoon (3PM–5PM)</option>
+                <option>Evening (5PM–7PM)</option>
+              </select>
+            </label>
+          </div>
+          <label class="field">
+            <span>Services</span>
+            <textarea name="services" id="reqServices" rows="3" placeholder="e.g. Eyebrows Threading + Lash Lift (or add from the menu above)"></textarea>
+          </label>
+          <label class="field">
+            <span>Notes <em>(optional)</em></span>
+            <input type="text" name="notes" placeholder="First visit? Allergies? Language preference?" />
+          </label>
+          <p class="req__err" id="reqErr" role="alert" hidden></p>
+          <div class="req__btns">
+            <button type="submit" class="btn btn--dark" data-via="sms">Send by Text</button>
+            <button type="submit" class="btn btn--line" data-via="email">Send by Email</button>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__top">
+        <div class="footer__col">
+          <span class="eyebrow eyebrow--light">Studio</span>
+          <p>10 Knolls Pl<br />Nashville, TN 37211</p>
+          <p>Mon–Sat 10AM–7PM<br />Sunday closed</p>
+        </div>
+        <div class="footer__col">
+          <span class="eyebrow eyebrow--light">Contact</span>
+          <p><a href="tel:+16155781851">+1 (615) 578-1851</a><br /><a href="mailto:Sarabeauty615@gmail.com">Sarabeauty615@gmail.com</a></p>
+        </div>
+        <div class="footer__col">
+          <span class="eyebrow eyebrow--light">Follow</span>
+          <ul class="socials">
+            <li><a href="https://www.instagram.com/sara_beautynashville/" target="_blank" rel="noopener">Instagram</a></li>
+            <li><a href="https://www.facebook.com/p/Sara-beauty-100082855898846/" target="_blank" rel="noopener">Facebook</a></li>
+            <li><a href="https://www.yelp.com/biz/sara-beauty-nashville" target="_blank" rel="noopener">Yelp</a></li>
+            <li><a href="https://www.mapquest.com/us/tennessee/sara-beauty-654514755" target="_blank" rel="noopener">MapQuest</a></li>
+            <li><a href="https://www.lashly.app/booking/sara-beauty" target="_blank" rel="noopener">Lashly</a></li>
+          </ul>
+        </div>
+        <div class="footer__col footer__col--cta">
+          <span class="eyebrow eyebrow--light">Ready?</span>
+          <a href="https://www.lashly.app/booking/sara-beauty" target="_blank" rel="noopener" class="btn btn--light">Book Now</a>
+        </div>
+      </div>
+      <div class="footer__mark" aria-hidden="true">Sara <em>Beauty</em></div>
+      <div class="footer__bottom">
+        <span>© <span id="year"></span> Sara Beauty · Nashville, Tennessee</span>
+        <span>Women-owned · Owner-operated · LGBTQ+ friendly</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Visit bag drawer -->
+  <div class="drawer-scrim" id="scrim" hidden></div>
+  <aside class="drawer" id="drawer" aria-label="My visit" aria-hidden="true">
+    <div class="drawer__head">
+      <div>
+        <span class="eyebrow">Your Selection</span>
+        <h3>My Visit</h3>
+      </div>
+      <button class="icon-btn" id="drawerClose" aria-label="Close">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg>
+      </button>
+    </div>
+    <ul class="drawer__list" id="bagList"></ul>
+    <p class="drawer__empty" id="bagEmpty">Nothing here yet. Tap <b>+</b> next to any service on the menu.</p>
+    <div class="drawer__foot">
+      <div class="drawer__totals">
+        <div><small>Est. time</small><b id="bagTime">0 min</b></div>
+        <div><small>Est. total</small><b id="bagTotal">$0.00</b></div>
+      </div>
+      <button class="btn btn--dark btn--block" id="bagRequest">Request These Services</button>
+      <button class="text-btn" id="bagClear">Clear list</button>
+    </div>
+  </aside>
+
+  <!-- Floating mobile CTA -->
+  <div class="fab" id="fab">
+    <a href="tel:+16155781851" class="fab__btn" aria-label="Call Sara Beauty">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg>
+    </a>
+    <a href="https://www.lashly.app/booking/sara-beauty" target="_blank" rel="noopener" class="fab__main">Book Now</a>
+  </div>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
