@@ -14,7 +14,7 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,500;1,6..96,400;1,6..96,500&family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,600;0,700;1,500;1,600&display=swap" rel="stylesheet" />
   <link rel="preload" as="image" href="assets/img/hero-sara.webp" />
   <link rel="stylesheet" href="styles.css" />
 
@@ -46,8 +46,7 @@
       "https://www.instagram.com/sara_beautynashville/",
       "https://www.facebook.com/p/Sara-beauty-100082855898846/",
       "https://www.yelp.com/biz/sara-beauty-nashville",
-      "https://www.mapquest.com/us/tennessee/sara-beauty-654514755",
-      "https://www.lashly.app/booking/sara-beauty"
+      "https://www.mapquest.com/us/tennessee/sara-beauty-654514755"
     ]
   }
   </script>
@@ -73,8 +72,7 @@
       </a>
       <nav class="nav__links" aria-label="Primary">
         <a href="#services">Services</a>
-        <a href="#menu">Price Menu</a>
-        <a href="#lashes">Lash Studio</a>
+        <a href="#menu">Service Menu</a>
         <a href="#about">About Sara</a>
         <a href="#reviews">Reviews</a>
         <a href="#visit">Visit</a>
@@ -84,7 +82,7 @@
           <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 8h12l-1 12H7L6 8Z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg>
           <span class="bag-btn__count" id="bagCount">0</span>
         </button>
-        <a href="https://www.lashly.app/booking/sara-beauty" target="_blank" rel="noopener" class="btn btn--dark btn--sm nav__cta">Book Now</a>
+        <a href="#book" class="btn btn--dark btn--sm nav__cta">Book Now</a>
         <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu">
           <span></span><span></span>
         </button>
@@ -96,14 +94,13 @@
   <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
     <nav aria-label="Mobile">
       <a href="#services"><span>01</span>Services</a>
-      <a href="#menu"><span>02</span>Price Menu</a>
-      <a href="#lashes"><span>03</span>Lash Studio</a>
-      <a href="#about"><span>04</span>About Sara</a>
-      <a href="#reviews"><span>05</span>Reviews</a>
-      <a href="#visit"><span>06</span>Visit</a>
+      <a href="#menu"><span>02</span>Service Menu</a>
+      <a href="#about"><span>03</span>About Sara</a>
+      <a href="#reviews"><span>04</span>Reviews</a>
+      <a href="#visit"><span>05</span>Visit</a>
     </nav>
     <div class="mobile-menu__foot">
-      <a href="https://www.lashly.app/booking/sara-beauty" target="_blank" rel="noopener" class="btn btn--light">Book on Lashly</a>
+      <a href="#book" class="btn btn--light">Book Now</a>
       <a href="tel:+16155781851" class="btn btn--ghost-light">(615) 578-1851</a>
     </div>
   </div>
@@ -124,11 +121,11 @@
             Her technique is so gentle that clients call it <em>“smooth as butter.”</em>
           </p>
           <div class="hero__ctas reveal d4">
-            <a href="https://www.lashly.app/booking/sara-beauty" target="_blank" rel="noopener" class="btn btn--dark">
+            <a href="#book" class="btn btn--dark">
               Book an Appointment
               <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
             </a>
-            <a href="#menu" class="btn btn--line">Explore the Menu</a>
+            <a href="#services" class="btn btn--line">Explore the Services</a>
           </div>
           <div class="hero__proof reveal d5">
             <div class="proof">
@@ -196,7 +193,7 @@
               <span class="svc-card__num">01</span>
               <h3>Brows &amp; Threading</h3>
               <p>Threading, waxing, tinting and lamination, shaped to suit your face.</p>
-              <div class="svc-card__foot"><span class="from" data-from="brows,threading"></span><button class="link-arrow" data-goto="brows">View prices</button></div>
+              <div class="svc-card__foot"><button class="link-arrow" data-goto="brows">View treatments</button></div>
             </div>
           </article>
           <article class="svc-card reveal d1" data-cat="lashes">
@@ -205,7 +202,7 @@
               <span class="svc-card__num">02</span>
               <h3>Lashes</h3>
               <p>Classic, hybrid, volume and mega volume extensions, plus lash lifts and tints.</p>
-              <div class="svc-card__foot"><span class="from" data-from="lashes"></span><button class="link-arrow" data-goto="lashes">View prices</button></div>
+              <div class="svc-card__foot"><button class="link-arrow" data-goto="lashes">View treatments</button></div>
             </div>
           </article>
           <article class="svc-card reveal d2" data-cat="skin">
@@ -214,7 +211,7 @@
               <span class="svc-card__num">03</span>
               <h3>Facials &amp; Skin</h3>
               <p>Deep-cleansing, Aqua and H2O facials, dermaplaning and scalp therapy.</p>
-              <div class="svc-card__foot"><span class="from" data-from="skin"></span><button class="link-arrow" data-goto="skin">View prices</button></div>
+              <div class="svc-card__foot"><button class="link-arrow" data-goto="skin">View treatments</button></div>
             </div>
           </article>
           <article class="svc-card reveal" data-cat="pmu">
@@ -223,16 +220,16 @@
               <span class="svc-card__num">04</span>
               <h3>Permanent Makeup</h3>
               <p>Microblading, lip blushing and eyeliner tattoo, so you wake up ready.</p>
-              <div class="svc-card__foot"><span class="from" data-from="pmu"></span><button class="link-arrow" data-goto="pmu">View prices</button></div>
+              <div class="svc-card__foot"><button class="link-arrow" data-goto="pmu">View treatments</button></div>
             </div>
           </article>
           <article class="svc-card reveal d1" data-cat="wax">
-            <div class="svc-card__img"><img src="assets/img/service-wax.webp" alt="Smooth leg resting on ivory silk" loading="lazy" width="1024" height="1280" /></div>
+            <div class="svc-card__img"><img src="assets/img/service-leg-wax-v2.webp" alt="Amber wax being applied to a client's lower leg with a wooden spatula" loading="lazy" width="1024" height="1280" /></div>
             <div class="svc-card__body">
               <span class="svc-card__num">05</span>
               <h3>Waxing</h3>
               <p>Gentle, virtually pain-free waxing, from brows and lips to full body.</p>
-              <div class="svc-card__foot"><span class="from" data-from="wax"></span><button class="link-arrow" data-goto="wax">View prices</button></div>
+              <div class="svc-card__foot"><button class="link-arrow" data-goto="wax">View treatments</button></div>
             </div>
           </article>
           <article class="svc-card reveal d2" data-cat="nails">
@@ -241,20 +238,38 @@
               <span class="svc-card__num">06</span>
               <h3>Nails</h3>
               <p>Manicures, gel polish, dip and acrylic sets in every length.</p>
-              <div class="svc-card__foot"><span class="from" data-from="nails"></span><button class="link-arrow" data-goto="nails">View prices</button></div>
+              <div class="svc-card__foot"><button class="link-arrow" data-goto="nails">View treatments</button></div>
+            </div>
+          </article>
+          <article class="svc-card reveal" data-cat="brows">
+            <div class="svc-card__img"><img src="assets/img/service-eyebrow-wax.webp" alt="Amber wax being applied beneath an eyebrow during a brow-shaping treatment" loading="lazy" width="1024" height="1280" /></div>
+            <div class="svc-card__body">
+              <span class="svc-card__num">07</span>
+              <h3>Eyebrow Waxing</h3>
+              <p>Precise brow waxing to define your arch and create a clean, softly shaped finish.</p>
+              <div class="svc-card__foot"><button class="link-arrow" data-goto="brows">View treatments</button></div>
+            </div>
+          </article>
+          <article class="svc-card reveal d1" data-cat="skin">
+            <div class="svc-card__img"><img src="assets/img/service-head-spa.webp" alt="Client enjoying a head spa scalp massage beneath a gentle water-rinse arch" loading="lazy" width="1024" height="1280" /></div>
+            <div class="svc-card__body">
+              <span class="svc-card__num">08</span>
+              <h3>Head Spa</h3>
+              <p>Relax with a scalp therapy treatment, on its own or paired with a facial.</p>
+              <div class="svc-card__foot"><button class="link-arrow" data-goto="skin">View treatments</button></div>
             </div>
           </article>
         </div>
       </div>
     </section>
 
-    <!-- PRICE MENU -->
+    <!-- SERVICE MENU -->
     <section class="section menu" id="menu">
       <div class="container">
         <div class="menu__head">
           <div>
             <p class="eyebrow reveal">The Menu</p>
-            <h2 class="h2 reveal d1">Services <em>&amp;</em> prices</h2>
+            <h2 class="h2 reveal d1">Find your <em>treatment.</em></h2>
           </div>
           <div class="menu__tools reveal d2">
             <label class="search">
@@ -277,67 +292,8 @@
             <p class="menu__empty" id="menuEmpty" hidden>No services match your search. Text Sara at <a href="sms:+16155781851">(615) 578-1851</a> and she'll help you find the right treatment.</p>
             <p class="menu__note">
               Tap <b>+</b> to add services to your visit list, then send it to Sara as a booking request.
-              Prices match the studio's in-store service list. “Ask” means the price depends on the treatment, so contact Sara for a quote.
             </p>
           </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- LASH STUDIO -->
-    <section class="section lash" id="lashes">
-      <div class="container">
-        <div class="lash__head">
-          <div>
-            <p class="eyebrow eyebrow--light reveal">The Lash Studio</p>
-            <h2 class="h2 h2--light reveal d1">Find your <em>lash look.</em></h2>
-          </div>
-          <p class="lash__lead reveal d2">
-            From natural definition to full glamour. Each set is mapped to your eye shape and applied lash by lash.
-            Book extensions online through Lashly.
-          </p>
-        </div>
-
-        <div class="lash-grid">
-          <article class="lash-card reveal">
-            <svg class="fan" data-fan="1" viewBox="0 0 120 70" aria-hidden="true"></svg>
-            <span class="lash-card__lvl">Natural</span>
-            <h3>Classic</h3>
-            <p>One extension per natural lash. Clean and defined, like wearing mascara.</p>
-            <div class="meter" style="--v:1"><i></i><i></i><i></i><i></i></div>
-          </article>
-          <article class="lash-card reveal d1">
-            <svg class="fan" data-fan="2" viewBox="0 0 120 70" aria-hidden="true"></svg>
-            <span class="lash-card__lvl">Textured</span>
-            <h3>Hybrid</h3>
-            <p>A mix of classic and volume lashes for soft, wispy texture.</p>
-            <div class="meter" style="--v:2"><i></i><i></i><i></i><i></i></div>
-          </article>
-          <article class="lash-card reveal d2">
-            <svg class="fan" data-fan="4" viewBox="0 0 120 70" aria-hidden="true"></svg>
-            <span class="lash-card__lvl">Full</span>
-            <h3>Volume</h3>
-            <p>Handmade lightweight fans for a fluffy, dimensional and darker lash line.</p>
-            <div class="meter" style="--v:3"><i></i><i></i><i></i><i></i></div>
-          </article>
-          <article class="lash-card reveal d3">
-            <svg class="fan" data-fan="7" viewBox="0 0 120 70" aria-hidden="true"></svg>
-            <span class="lash-card__lvl">Dramatic</span>
-            <h3>Mega Volume</h3>
-            <p>Ultra-fine, densely packed fans for maximum glamour.</p>
-            <div class="meter" style="--v:4"><i></i><i></i><i></i><i></i></div>
-          </article>
-        </div>
-
-        <div class="lash__extras reveal">
-          <div class="extra"><span>Lash Lift</span><b>$82.79</b><small>30 min</small></div>
-          <div class="extra"><span>Lash Tint</span><b>$31.05</b><small>10 min</small></div>
-          <div class="extra"><span>Lashes</span><b>$41.40</b><small>15 min</small></div>
-          <div class="extra"><span>Brows &amp; Lashes</span><b>$51.75</b><small>25 min</small></div>
-          <a href="https://www.lashly.app/booking/sara-beauty" target="_blank" rel="noopener" class="btn btn--light">
-            Book Extensions on Lashly
-            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg>
-          </a>
         </div>
       </div>
     </section>
@@ -347,10 +303,6 @@
       <div class="container about__grid">
         <div class="about__media reveal-scale">
           <img src="assets/img/about-studio.webp" alt="Sara Beauty's main studio floor with Sara's framed certifications, the butterfly logo and a pink velvet sofa" loading="lazy" width="1090" height="1253" />
-          <div class="about__tag">
-            <span>Women-owned</span>
-            <span>Owner-operated</span>
-          </div>
         </div>
         <div class="about__copy">
           <p class="eyebrow reveal">Meet Sara</p>
@@ -377,6 +329,16 @@
           </div>
         </div>
       </div>
+      <div class="container">
+        <div class="about__gallery">
+          <figure class="shot reveal-scale">
+            <img src="assets/img/gallery-pedicure.webp" alt="Row of black massage pedicure chairs beside the studio windows and plants" loading="lazy" decoding="async" width="1200" height="896" />
+          </figure>
+          <figure class="shot reveal-scale d1">
+            <img src="assets/img/gallery-treatment-room.webp" alt="Sara Beauty's treatment room with facial equipment, soft lighting and a Relax neon sign" loading="lazy" decoding="async" width="768" height="1376" />
+          </figure>
+        </div>
+      </div>
     </section>
 
     <!-- STUDIO GALLERY -->
@@ -392,15 +354,12 @@
         <div class="studio__grid">
           <figure class="shot shot--entry reveal-scale">
             <img src="assets/img/gallery-entry.webp" alt="The illuminated Sara Beauty sign with butterfly logo at the studio entrance" loading="lazy" width="1400" height="1050" />
-            <figcaption><span>01</span>The entrance</figcaption>
           </figure>
           <figure class="shot shot--neon reveal-scale d1">
             <img src="assets/img/gallery-neon.webp" alt="Treatment room glowing under a pink neon sign" loading="lazy" width="803" height="959" />
-            <figcaption><span>02</span>The glow room</figcaption>
           </figure>
           <figure class="shot shot--desk reveal-scale d2">
             <img src="assets/img/gallery-desk.webp" alt="Front desk with the Sara Beauty logo and a lit product boutique case" loading="lazy" width="1400" height="1050" />
-            <figcaption><span>03</span>Front desk &amp; boutique</figcaption>
           </figure>
           <a class="shot shot--tile reveal-scale d3" href="https://www.instagram.com/sara_beautynashville/" target="_blank" rel="noopener">
             <span class="shot__k">@sara_beautynashville</span>
@@ -562,25 +521,20 @@
         <div class="book__copy">
           <p class="eyebrow eyebrow--light reveal">Appointments</p>
           <h2 class="h2 h2--light reveal d1">Your glow, <em>your way.</em></h2>
-          <p class="reveal d2">Book online, call, text or email. Sara replies personally to every message.</p>
+          <p class="reveal d2">Call, text or email. Sara replies personally to every message.</p>
 
           <div class="channels">
-            <a class="channel reveal" href="https://www.lashly.app/booking/sara-beauty" target="_blank" rel="noopener">
-              <span class="channel__k">Online</span>
-              <span class="channel__v">Book on Lashly</span>
-              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg>
-            </a>
-            <a class="channel reveal d1" href="tel:+16155781851">
+            <a class="channel reveal" href="tel:+16155781851">
               <span class="channel__k">Call</span>
               <span class="channel__v">+1 (615) 578-1851</span>
               <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg>
             </a>
-            <a class="channel reveal d2" href="sms:+16155781851">
+            <a class="channel reveal d1" href="sms:+16155781851">
               <span class="channel__k">Text</span>
               <span class="channel__v">Message Sara</span>
               <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg>
             </a>
-            <a class="channel reveal d3" href="mailto:Sarabeauty615@gmail.com">
+            <a class="channel reveal d2" href="mailto:Sarabeauty615@gmail.com">
               <span class="channel__k">Email</span>
               <span class="channel__v">Sarabeauty615@gmail.com</span>
               <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg>
@@ -617,10 +571,13 @@
               </select>
             </label>
           </div>
-          <label class="field">
-            <span>Services</span>
-            <textarea name="services" id="reqServices" rows="3" placeholder="e.g. Eyebrows Threading + Lash Lift (or add from the menu above)"></textarea>
-          </label>
+          <div class="field">
+            <div class="field__head">
+              <label for="reqServices">Services</label>
+              <a href="#menu" class="link-arrow">Explore the Services</a>
+            </div>
+            <textarea name="services" id="reqServices" rows="3" placeholder="e.g. Eyebrows Threading + Lash Lift"></textarea>
+          </div>
           <label class="field">
             <span>Notes <em>(optional)</em></span>
             <input type="text" name="notes" placeholder="First visit? Allergies? Language preference?" />
@@ -655,12 +612,11 @@
             <li><a href="https://www.facebook.com/p/Sara-beauty-100082855898846/" target="_blank" rel="noopener">Facebook</a></li>
             <li><a href="https://www.yelp.com/biz/sara-beauty-nashville" target="_blank" rel="noopener">Yelp</a></li>
             <li><a href="https://www.mapquest.com/us/tennessee/sara-beauty-654514755" target="_blank" rel="noopener">MapQuest</a></li>
-            <li><a href="https://www.lashly.app/booking/sara-beauty" target="_blank" rel="noopener">Lashly</a></li>
           </ul>
         </div>
         <div class="footer__col footer__col--cta">
           <span class="eyebrow eyebrow--light">Ready?</span>
-          <a href="https://www.lashly.app/booking/sara-beauty" target="_blank" rel="noopener" class="btn btn--light">Book Now</a>
+          <a href="#book" class="btn btn--light">Book Now</a>
         </div>
       </div>
       <div class="footer__mark" aria-hidden="true">Sara <em>Beauty</em></div>
@@ -686,9 +642,8 @@
     <ul class="drawer__list" id="bagList"></ul>
     <p class="drawer__empty" id="bagEmpty">Nothing here yet. Tap <b>+</b> next to any service on the menu.</p>
     <div class="drawer__foot">
-      <div class="drawer__totals">
-        <div><small>Est. time</small><b id="bagTime">0 min</b></div>
-        <div><small>Est. total</small><b id="bagTotal">$0.00</b></div>
+      <div class="drawer__summary">
+        <small>Estimated time</small><b id="bagTime">0 min</b>
       </div>
       <button class="btn btn--dark btn--block" id="bagRequest">Request These Services</button>
       <button class="text-btn" id="bagClear">Clear list</button>
@@ -700,7 +655,7 @@
     <a href="tel:+16155781851" class="fab__btn" aria-label="Call Sara Beauty">
       <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg>
     </a>
-    <a href="https://www.lashly.app/booking/sara-beauty" target="_blank" rel="noopener" class="fab__main">Book Now</a>
+    <a href="#book" class="fab__main">Book Now</a>
   </div>
 
   <div class="toast" id="toast" role="status" aria-live="polite"></div>

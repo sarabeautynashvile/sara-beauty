@@ -3,7 +3,6 @@
 
   const PHONE = "+16155781851";
   const EMAIL = "Sarabeauty615@gmail.com";
-  const LASHLY = "https://www.lashly.app/booking/sara-beauty";
 
   const CATS = [
     { id: "all", label: "All Services" },
@@ -17,95 +16,85 @@
     { id: "hair", label: "Hair & More" }
   ];
 
-  // Prices and durations transcribed from the studio's in-store service list.
-  // p: null => price varies (shown as "Ask").
   const SERVICES = [
-    // Brows
-    ["brows", "Eyebrows Threading", 10, 15.52, null, "Popular"],
-    ["brows", "Eyebrows Waxing", 10, 18.63],
-    ["brows", "Eyebrows Tinting", 15, 20.70],
-    ["brows", "Eyebrows Lamination", 20, 77.63, null, "Trending"],
-    ["brows", "Guy Eyebrows", 10, 20.70],
-    ["brows", "Eyebrows & Lashes", 25, 51.75, "Brow + lash combo"],
+    ["brows", "Eyebrows Threading", 10, null, "Popular"],
+    ["brows", "Eyebrows Waxing", 10],
+    ["brows", "Eyebrows Tinting", 15],
+    ["brows", "Eyebrows Lamination", 20, null, "Trending"],
+    ["brows", "Guy Eyebrows", 10],
+    ["brows", "Eyebrows & Lashes", 25, "Brow + lash combo"],
 
-    // Face threading
-    ["threading", "Full Face Threading", 15, 46.57],
-    ["threading", "Forehead Threading", 10, 10.35],
-    ["threading", "Chin Threading", 10, 10.35],
-    ["threading", "Side Threading", 10, 18.63],
-    ["threading", "Neck Threading", 10, 12.42],
-    ["threading", "Upper Lip Threading", 10, 7.24],
-    ["threading", "Lower Lip Threading", 10, 6.21],
+    ["threading", "Full Face Threading", 15],
+    ["threading", "Forehead Threading", 10],
+    ["threading", "Chin Threading", 10],
+    ["threading", "Side Threading", 10],
+    ["threading", "Neck Threading", 10],
+    ["threading", "Upper Lip Threading", 10],
+    ["threading", "Lower Lip Threading", 10],
 
-    // Lashes
-    ["lashes", "Lash Lift", 30, 82.79, null, "Popular"],
-    ["lashes", "Lash Tint", 10, 31.05],
-    ["lashes", "Lashes", 15, 41.40],
-    ["lashes", "Classic Lash Extensions", null, null, "Book online via Lashly", null, "lashly"],
-    ["lashes", "Hybrid Lash Extensions", null, null, "Book online via Lashly", null, "lashly"],
-    ["lashes", "Volume Lash Extensions", null, null, "Book online via Lashly", null, "lashly"],
-    ["lashes", "Mega Volume Lash Extensions", null, null, "Book online via Lashly", null, "lashly"],
+    ["lashes", "Lash Lift", 30, null, "Popular"],
+    ["lashes", "Lash Tint", 10],
+    ["lashes", "Lashes", 15],
+    ["lashes", "Classic Lash Extensions", null],
+    ["lashes", "Hybrid Lash Extensions", null],
+    ["lashes", "Volume Lash Extensions", null],
+    ["lashes", "Mega Volume Lash Extensions", null],
 
-    // Permanent makeup
-    ["pmu", "Microblading", 45, 362.25, null, "Signature"],
-    ["pmu", "Microblading Touch Up", 30, 129.38],
-    ["pmu", "Lip Blushing", 50, 258.75],
-    ["pmu", "Eyeliner Tattoo", 50, 201.82],
+    ["pmu", "Microblading", 45, null, "Signature"],
+    ["pmu", "Microblading Touch Up", 30],
+    ["pmu", "Lip Blushing", 50],
+    ["pmu", "Eyeliner Tattoo", 50],
 
-    // Facials & skin
-    ["skin", "Aqua Facial", 45, 129.38, null, "Signature"],
-    ["skin", "H2O Facial", 45, 124.20],
-    ["skin", "Acne Facial", 45, 98.32],
-    ["skin", "Back Facial", 60, 119.02],
-    ["skin", "Derma Planing", 45, 113.85],
-    ["skin", "Customized Facial", 30, null, "Tailored to your skin"],
-    ["skin", "Scalp Therapy Treatment", 60, 160.42],
-    ["skin", "Scalp Therapy & Facial Treatment", 90, 201.82],
+    ["skin", "Aqua Facial", 45, null, "Signature"],
+    ["skin", "H2O Facial", 45],
+    ["skin", "Acne Facial", 45],
+    ["skin", "Back Facial", 60],
+    ["skin", "Derma Planing", 45],
+    ["skin", "Customized Facial", 30, "Tailored to your skin"],
+    ["skin", "Scalp Therapy Treatment", 60, "Head spa"],
+    ["skin", "Scalp Therapy & Facial Treatment", 90, "Head spa + facial"],
 
-    // Waxing
-    ["wax", "Full Body Wax", 60, 217.35],
-    ["wax", "Brazilian Wax", 20, 61.06, null, "Popular"],
-    ["wax", "Bikini Line", 15, 36.22],
-    ["wax", "Full Legs", 30, 87.97],
-    ["wax", "Half Legs", 15, 46.57],
-    ["wax", "Full Arms", 15, 41.40],
-    ["wax", "Half Arms", 10, 25.87],
-    ["wax", "Under Arms", 10, 20.70],
-    ["wax", "Back Wax", 20, 50.71],
-    ["wax", "Chest Wax", 20, 46.57],
-    ["wax", "Full Face Wax", 15, null],
-    ["wax", "Forehead Wax", 10, 15.52],
-    ["wax", "Cheeks Wax", 10, 10.35],
-    ["wax", "Chin Wax", 10, 10.35],
-    ["wax", "Side Burn Wax", 10, 20.70],
-    ["wax", "Upper Lip Wax", 10, 8.28],
-    ["wax", "Lower Lip Wax", 10, null],
-    ["wax", "Neck Wax", 10, 15.52],
-    ["wax", "Nose Wax", 10, null],
-    ["wax", "Ear Wax", 10, 15.52],
-    ["wax", "Fingers Waxing", 10, 15.52],
+    ["wax", "Full Body Wax", 60],
+    ["wax", "Brazilian Wax", 20, null, "Popular"],
+    ["wax", "Bikini Line", 15],
+    ["wax", "Full Legs", 30],
+    ["wax", "Half Legs", 15],
+    ["wax", "Full Arms", 15],
+    ["wax", "Half Arms", 10],
+    ["wax", "Under Arms", 10],
+    ["wax", "Back Wax", 20],
+    ["wax", "Chest Wax", 20],
+    ["wax", "Full Face Wax", 15],
+    ["wax", "Forehead Wax", 10],
+    ["wax", "Cheeks Wax", 10],
+    ["wax", "Chin Wax", 10],
+    ["wax", "Side Burn Wax", 10],
+    ["wax", "Upper Lip Wax", 10],
+    ["wax", "Lower Lip Wax", 10],
+    ["wax", "Neck Wax", 10],
+    ["wax", "Nose Wax", 10],
+    ["wax", "Ear Wax", 10],
+    ["wax", "Fingers Waxing", 10],
 
-    // Nails
-    ["nails", "Basic Manicure", 30, 25.00],
-    ["nails", "Gel Polish Hands", 30, 30.00, "Without another service"],
-    ["nails", "Gel Polish Hands (add-on)", 15, 20.00, "With another service"],
-    ["nails", "Dip Polish w/ Tip", 30, 60.00],
-    ["nails", "Acrylic Full Set", 30, 65.00],
-    ["nails", "Acrylic Fill", 45, 55.00],
-    ["nails", "Full Set Medium Nails", 45, 70.00],
-    ["nails", "Full Set Long Nails", 45, 75.00],
-    ["nails", "Full Set Extra Long", 45, 80.00],
-    ["nails", "Acrylic Removal", 45, 15.00, "With a service"],
-    ["nails", "Nail Fix", 10, 5.00, "Single nail repair"],
-    ["nails", "Pedicure", null, null, "Ask Sara for pricing"],
+    ["nails", "Basic Manicure", 30],
+    ["nails", "Gel Polish Hands", 30, "Without another service"],
+    ["nails", "Gel Polish Hands (add-on)", 15, "With another service"],
+    ["nails", "Dip Polish w/ Tip", 30],
+    ["nails", "Acrylic Full Set", 30],
+    ["nails", "Acrylic Fill", 45],
+    ["nails", "Full Set Medium Nails", 45],
+    ["nails", "Full Set Long Nails", 45],
+    ["nails", "Full Set Extra Long", 45],
+    ["nails", "Acrylic Removal", 45, "With a service"],
+    ["nails", "Nail Fix", 10, "Single nail repair"],
+    ["nails", "Pedicure", null],
 
-    // Hair & more
-    ["hair", "Hair Cut", 20, 39.00],
-    ["hair", "Hair Services", 30, 45.00],
-    ["hair", "Makeup Application", null, null, "Events, photos & special occasions"],
-    ["hair", "Relaxing Massage", null, null, "Ask Sara for pricing"]
-  ].map(([cat, name, min, price, note, tag, via], i) => ({
-    id: slug(name) + "-" + i, cat, name, min, price, note, tag, via
+    ["hair", "Hair Cut", 20],
+    ["hair", "Hair Services", 30],
+    ["hair", "Makeup Application", null, "Events, photos & special occasions"],
+    ["hair", "Relaxing Massage", null]
+  ].map(([cat, name, min, note, tag], i) => ({
+    id: slug(name) + "-" + i, cat, name, min, note, tag
   }));
 
   const byId = new Map(SERVICES.map(s => [s.id, s]));
@@ -114,7 +103,6 @@
   function slug(s) { return s.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/(^-|-$)/g, ""); }
   const $ = (sel, root = document) => root.querySelector(sel);
   const $$ = (sel, root = document) => [...root.querySelectorAll(sel)];
-  const money = n => "$" + n.toFixed(2);
   const fmtMin = m => {
     if (!m) return "";
     const h = Math.floor(m / 60), r = m % 60;
@@ -138,13 +126,6 @@
     toastTimer = setTimeout(() => t.classList.remove("is-on"), 2200);
   }
 
-  /* ---------- "from" prices on signature cards ---------- */
-  $$("[data-from]").forEach(el => {
-    const cats = el.dataset.from.split(",");
-    const prices = SERVICES.filter(s => cats.includes(s.cat) && s.price).map(s => s.price);
-    if (prices.length) el.innerHTML = `From <b>${money(Math.min(...prices))}</b>`;
-  });
-
   /* ---------- Menu ---------- */
   const catsEl = $("#cats");
   const itemsEl = $("#menuItems");
@@ -162,18 +143,12 @@
 
   function itemHtml(s, q, idx) {
     const inBag = bag.includes(s.id);
-    const priceLabel = s.price ? money(s.price) : s.via === "lashly" ? "Online" : "Ask";
-    const priceHtml = s.via === "lashly"
-      ? `<a class="item__price is-ask" href="${LASHLY}" target="_blank" rel="noopener">${priceLabel} ↗</a>`
-      : `<span class="item__price${s.price ? "" : " is-ask"}">${priceLabel}</span>`;
     return `<li class="item" style="animation-delay:${Math.min(idx * 25, 400)}ms">
       <div class="item__main">
         <span class="item__name">${highlight(s.name, q)}${s.tag ? `<span class="item__tag">${s.tag}</span>` : ""}${s.note ? `<small>${escapeHtml(s.note)}</small>` : ""}</span>
-        <span class="item__lead" aria-hidden="true"></span>
       </div>
       ${s.min ? `<span class="item__dur">${clockSvg}${fmtMin(s.min)}</span>` : `<span class="item__dur"></span>`}
       <div class="item__right">
-        ${priceHtml}
         <button class="add${inBag ? " is-added" : ""}" data-add="${s.id}" aria-pressed="${inBag}" aria-label="${inBag ? "Remove" : "Add"} ${escapeHtml(s.name)} ${inBag ? "from" : "to"} my visit">${plusSvg}</button>
       </div>
     </li>`;
@@ -261,14 +236,10 @@
     $("#bagList").innerHTML = items.map(s => `
       <li>
         <div><b>${escapeHtml(s.name)}</b><small>${s.min ? fmtMin(s.min) : "Time varies"}</small></div>
-        <span class="p">${s.price ? money(s.price) : "Ask"}</span>
         <button data-remove="${s.id}" aria-label="Remove ${escapeHtml(s.name)}"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg></button>
       </li>`).join("");
 
-    const total = items.reduce((a, s) => a + (s.price || 0), 0);
     const mins = items.reduce((a, s) => a + (s.min || 0), 0);
-    const hasAsk = items.some(s => !s.price);
-    $("#bagTotal").textContent = money(total) + (hasAsk ? "+" : "");
     $("#bagTime").textContent = mins ? fmtMin(mins) + (items.some(s => !s.min) ? "+" : "") : "—";
     $("#bagRequest").disabled = !items.length;
     $("#bagRequest").style.opacity = items.length ? 1 : .5;
@@ -408,41 +379,6 @@
   updateStatus();
   setInterval(updateStatus, 60000);
 
-  /* ---------- Lash fan illustrations ---------- */
-  $$(".fan").forEach(svg => {
-    const n = +svg.dataset.fan;
-    const P0 = [8, 16], P1 = [60, 44], P2 = [112, 16];
-    const ns = "http://www.w3.org/2000/svg";
-    const lid = document.createElementNS(ns, "path");
-    lid.setAttribute("d", `M${P0} Q${P1} ${P2}`);
-    lid.setAttribute("class", "lid");
-    svg.appendChild(lid);
-    const count = 13;
-    for (let i = 0; i < count; i++) {
-      const t = .07 + (i / (count - 1)) * .86;
-      const bx = (1 - t) ** 2 * P0[0] + 2 * (1 - t) * t * P1[0] + t ** 2 * P2[0];
-      const by = (1 - t) ** 2 * P0[1] + 2 * (1 - t) * t * P1[1] + t ** 2 * P2[1];
-      const tx = 2 * (1 - t) * (P1[0] - P0[0]) + 2 * t * (P2[0] - P1[0]);
-      const ty = 2 * (1 - t) * (P1[1] - P0[1]) + 2 * t * (P2[1] - P1[1]);
-      const base = Math.atan2(-ty, tx) + (t - .5) * .5;
-      const len = 14 + 9 * Math.sin(Math.PI * t);
-      for (let k = 0; k < n; k++) {
-        const spread = n > 1 ? (k / (n - 1) - .5) * (.14 + n * .05) : 0;
-        const a = base + spread;
-        const L = len * (1 - Math.abs(spread) * .5);
-        const ex = bx + Math.sin(a) * L, ey = by + Math.cos(a) * L;
-        const cx = bx + Math.sin(a - .35) * L * .6, cy = by + Math.cos(a - .35) * L * .6;
-        const p = document.createElementNS(ns, "path");
-        p.setAttribute("d", `M${bx.toFixed(1)} ${by.toFixed(1)} Q${cx.toFixed(1)} ${cy.toFixed(1)} ${ex.toFixed(1)} ${ey.toFixed(1)}`);
-        p.setAttribute("pathLength", "1");
-        p.setAttribute("class", "l");
-        p.style.transitionDelay = `${(i * 40 + k * 15)}ms`;
-        if (n > 3) p.style.opacity = .55 + .45 * (1 - Math.abs(spread) * 1.5);
-        svg.appendChild(p);
-      }
-    }
-  });
-
   /* ---------- Score count-up ---------- */
   function countUp(el) {
     const target = parseFloat(el.dataset.count);
@@ -475,10 +411,13 @@
   const hero = $(".hero");
   const onScroll = () => {
     const y = window.scrollY;
+    const formRect = form.getBoundingClientRect();
+    const formVisible = formRect.top < window.innerHeight && formRect.bottom > nav.offsetHeight;
     nav.classList.toggle("is-stuck", y > 40);
-    fab.classList.toggle("is-on", y > hero.offsetHeight * .7);
+    fab.classList.toggle("is-on", y > hero.offsetHeight * .7 && !formVisible);
   };
   window.addEventListener("scroll", onScroll, { passive: true });
+  window.addEventListener("resize", onScroll);
   onScroll();
 
   const links = $$(".nav__links a");
@@ -529,5 +468,4 @@
   $("#year").textContent = new Date().getFullYear();
   renderMenu();
   renderBag();
-  requestAnimationFrame(() => document.body.classList.add("is-loaded"));
 })();
